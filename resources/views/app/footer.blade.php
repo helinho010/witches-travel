@@ -94,25 +94,31 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" id="formulario-contacto">
                     <div class="col titulo">
                         Formulario de Contacto
                     </div>
                     <div class="col">
-                        <form action="" method="post" class="text-start">
+                        <form action="{{ route('formularioContacto') }}" method="post" class="text-start">
                             @csrf
                             @method('post')
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-                                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Ej. Juan Peres">
+                                <input type="nombre" name="nombre_contacto" class="form-control" id="exampleFormControlInput1" value="{{ old("nombre_contacto","")}}" placeholder="Ej. Juan Peres">
+                                @error('nombre_contacto')
+                                    <span class="mensaje-error-inputs">{{ $message }}</span>
+                                @enderror       
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput2" class="form-label">Numero de Contacto:</label>
-                                <input type="numero" class="form-control" id="exampleFormControlInput2" placeholder="Ej. 77258452">
+                                <input type="numero" name="numero_contacto" class="form-control" id="exampleFormControlInput2" value="{{ old("numero_contacto","")}}" placeholder="Ej. 77258452">
+                                @error('numero_contacto')
+                                    <span class="mensaje-error-inputs">{{ $message }}</span>
+                                @enderror 
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Introduzca un texto"></textarea>
+                                <textarea class="form-control" name="mensaje_contacto" id="exampleFormControlTextarea1" rows="3" placeholder="Introduzca un texto">{{ old("mensaje_contacto") }}</textarea>
                             </div>
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-primary mb-3">Enviar</button>
