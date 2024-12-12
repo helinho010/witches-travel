@@ -25,7 +25,6 @@ class EnvioCorreoContacto extends Controller
         
         Mail::to('g.apaza007@gmail.com')->send(new OrderShipped($data));
 
-        // return redirect(route('home') . '/#Contacto');
-        return redirect()->route('home'.'/#Contacto',["nombre"=>"Helio"]);
+        return redirect(route('home') . '/#Contacto');
     }
 }
