@@ -46,6 +46,8 @@
 
 @section('main')
 
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quae, earum quia natus voluptatibus culpa vel temporibus quos sequi quibusdam aliquam veritatis? Labore earum neque delectus, vitae ratione libero minus.
+
 {{-- Icono de Whatsapp --}}
 <a href="https://wa.me/591123456789" target="_blank" class="whatsapp-float" title="Chat en WhatsApp">
     <img src="{{ asset('/img/logoWhatsapp.png') }}" alt="WhatsApp" class="whatsapp-icon"> <!-- Puedes reemplazar con un icono de Font Awesome -->
