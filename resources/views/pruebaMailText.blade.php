@@ -61,7 +61,7 @@
             Celular o Correo Electronico: {{ $data['contacto'] }} <br>
             Mensaje: {{ $data['mensaje'] }} <br>
         </p>
-        <p>Gracias por utilizar nuestros servicios. Este es un correo estilizado de prueba.</p>
+        <p>Gracias por utilizar nuestros servicios.</p>
         <a href="{{ $data['url'] }}" class="btn">Ver más</a>
         <div class="footer">
             <p>© 2024 Whtiches Travel. Todos los derechos reservados.</p>

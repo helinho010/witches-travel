@@ -23,7 +23,9 @@ class EnvioCorreoContacto extends Controller
             'url' => route('home'),
         ];
         
-        Mail::to('g.apaza007@gmail.com')->send(new OrderShipped($data));
+        Mail::to('g.apaza007@gmail.com')
+            ->cc('witchestravel.bo@gmail.com')
+            ->send(new OrderShipped($data));
 
         return redirect(route('home') . '/#Contacto');
     }
