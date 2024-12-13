@@ -46,7 +46,97 @@
 
 @section('main')
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quae, earum quia natus voluptatibus culpa vel temporibus quos sequi quibusdam aliquam veritatis? Labore earum neque delectus, vitae ratione libero minus.
+<div class="container mt-5">
+    <div class="row">
+        <!-- One Column & Sidebar -->
+        <div class="col-md-6 col-lg-4">
+            <h2>Escapada Romántica</h2>
+            <p>Destinos: Playa, Montaña, Ciudades románticas.</p>
+            <p>Incluye: Hospedaje, transporte y actividades exclusivas para parejas.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <h2>Aventura en la Naturaleza</h2>
+            <p>Destinos: Parques nacionales, Ecoturismo.</p>
+            <p>Incluye: Caminatas guiadas, campamentos y equipo.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <h2>Viajes Familiares</h2>
+            <p>Destinos: Resorts familiares, parques temáticos.</p>
+            <p>Incluye: Actividades para todas las edades y descuentos grupales.</p>
+        </div>
+    </div>    
+
+    <!-- Three Columns Example -->
+    <div class="row mt-5">
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 1">
+            </div>
+            <h4 class="mt-2">Título 1</h4>
+            <p>Descripción breve sobre el contenido 1.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 2">
+            </div>
+            <h4 class="mt-2">Título 2</h4>
+            <p>Descripción breve sobre el contenido 2.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 3">
+            </div>
+            <h4 class="mt-2">Título 3</h4>
+            <p>Descripción breve sobre el contenido 3.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- One Column & Sidebar -->
+        <div class="col-md-6 col-lg-4">
+            <h2>Escapada Romántica</h2>
+            <p>Destinos: Playa, Montaña, Ciudades románticas.</p>
+            <p>Incluye: Hospedaje, transporte y actividades exclusivas para parejas.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <h2>Aventura en la Naturaleza</h2>
+            <p>Destinos: Parques nacionales, Ecoturismo.</p>
+            <p>Incluye: Caminatas guiadas, campamentos y equipo.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <h2>Viajes Familiares</h2>
+            <p>Destinos: Resorts familiares, parques temáticos.</p>
+            <p>Incluye: Actividades para todas las edades y descuentos grupales.</p>
+        </div>
+    </div>    
+
+    <!-- Three Columns Example -->
+    <div class="row mt-5">
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 1">
+            </div>
+            <h4 class="mt-2">Título 1</h4>
+            <p>Descripción breve sobre el contenido 1.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 2">
+            </div>
+            <h4 class="mt-2">Título 2</h4>
+            <p>Descripción breve sobre el contenido 2.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 3">
+            </div>
+            <h4 class="mt-2">Título 3</h4>
+            <p>Descripción breve sobre el contenido 3.</p>
+        </div>
+    </div>
+</div>
 
 {{-- Icono de Whatsapp --}}
 <a href="https://wa.me/591123456789" target="_blank" class="whatsapp-float" title="Chat en WhatsApp">
