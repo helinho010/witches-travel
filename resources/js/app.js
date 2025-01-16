@@ -3,6 +3,28 @@ import '../css/app.css';
 
 let currentSlide = 1;
 
+/*
+* Carrusel
+*/
+  
+  const leftButton = document.querySelector('.btn-nav.left');
+  const rightButton = document.querySelector('.btn-nav.right');
+  const carousel = document.querySelector('.carousel');
+
+  const cardWidth = carousel.querySelector('.card').offsetWidth + 16; // Ancho de tarjeta + gap
+
+  leftButton.addEventListener('click', () => {
+    carousel.scrollBy({ left: -cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la izquierda
+  });
+
+  rightButton.addEventListener('click', () => {
+    carousel.scrollBy({ left: cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la derecha
+  });
+
+/**
+ * Fin Carrusel
+ */
+
     function mostrarImagen(slide) {
         const imagen1 = document.querySelector('.imagen1');
         const imagen2 = document.querySelector('.imagen2');

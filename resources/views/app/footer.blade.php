@@ -46,6 +46,80 @@
 
 @section('main')
 
+<!-- Inicio Personal de la Empresa-->
+<div class="container-fluid mt-5" id="informacion-personal">
+    <div class="text-center gloria-hallelujah-regular titulo-main">Personal Capacitado</div>
+    <br>
+    <div class="row contenedor-principal-info-personal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7">
+                    <img style="height: 300px" src="{{asset('img/personal/1.jpeg')}}" alt="">
+                </div>
+                <div class="col-5 descripcion-personal">
+                    <div class="info">
+                        <h1>María López</h1>
+                        <h2>Guía Turística</h2>
+                        <p>
+                            Soy una guía turística apasionada con más de 10 años de experiencia 
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            gastronómicos y de aventura.
+                        </p>
+                        <div class="details">
+                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
+                            <p><strong>Contacto:</strong> +34 123 456 789</p>
+                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 descripcion-personal">
+                    <div class="info">
+                        <h1>María López</h1>
+                        <h2>Guía Turística</h2>
+                        <p>
+                            Soy una guía turística apasionada con más de 10 años de experiencia 
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            gastronómicos y de aventura.
+                        </p>
+                        <div class="details">
+                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
+                            <p><strong>Contacto:</strong> +34 123 456 789</p>
+                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-7">
+                    <img style="height: 300px" src="{{asset('img/personal/2.webp')}}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <img style="height: 300px" src="{{asset('img/personal/3.webp')}}" alt="">
+                </div>
+                <div class="col-5 descripcion-personal">
+                    <div class="info">
+                        <h1>María López</h1>
+                        <h2>Guía Turística</h2>
+                        <p>
+                            Soy una guía turística apasionada con más de 10 años de experiencia 
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            gastronómicos y de aventura.
+                        </p>
+                        <div class="details">
+                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
+                            <p><strong>Contacto:</strong> +34 123 456 789</p>
+                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Personal de la Empresa-->
+
 <div class="container mt-5">
     <div class="row">
         <!-- One Column & Sidebar -->
@@ -93,49 +167,30 @@
 </div>
 
 <div class="container mt-5">
-    <div class="row">
-        <!-- One Column & Sidebar -->
-        <div class="col-md-6 col-lg-4">
-            <h2>Escapada Romántica</h2>
-            <p>Destinos: Playa, Montaña, Ciudades románticas.</p>
-            <p>Incluye: Hospedaje, transporte y actividades exclusivas para parejas.</p>
+    <div class="text-center gloria-hallelujah-regular" id="titulo-carousel">Comentarios de las Personas</div>
+    <div class="carousel-container">
+        <button class="btn-nav left">&larr;</button>
+        <button class="btn-nav right">&rarr;</button>
+      
+        <div class="carousel">
+          <div class="card">    
+            <h5>Card 1</h5>
+            <p>Content for card 1.</p>
+          </div>
+          <div class="card">
+            <h5>Card 2</h5>
+            <p>Content for card 2.</p>
+          </div>
+          <div class="card">
+            <h5>Card 3</h5>
+            <p>Content for card 3.</p>
+          </div>
+          <div class="card">
+            <h5>Card 4</h5>
+            <p>Content for card 4.</p>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <h2>Aventura en la Naturaleza</h2>
-            <p>Destinos: Parques nacionales, Ecoturismo.</p>
-            <p>Incluye: Caminatas guiadas, campamentos y equipo.</p>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <h2>Viajes Familiares</h2>
-            <p>Destinos: Resorts familiares, parques temáticos.</p>
-            <p>Incluye: Actividades para todas las edades y descuentos grupales.</p>
-        </div>
-    </div>    
-
-    <!-- Three Columns Example -->
-    <div class="row mt-5">
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 1">
-            </div>
-            <h4 class="mt-2">Título 1</h4>
-            <p>Descripción breve sobre el contenido 1.</p>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 2">
-            </div>
-            <h4 class="mt-2">Título 2</h4>
-            <p>Descripción breve sobre el contenido 2.</p>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 3">
-            </div>
-            <h4 class="mt-2">Título 3</h4>
-            <p>Descripción breve sobre el contenido 3.</p>
-        </div>
-    </div>
+      </div>
 </div>
 
 {{-- Icono de Whatsapp --}}

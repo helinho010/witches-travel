@@ -348,3 +348,127 @@ footer div > div > div > div {
     max-height: 250px; /* Ajusta este valor según el tamaño de las imágenes */
     overflow-y: auto;
 }
+
+/*
+* Carrusel de cards 
+*/
+/* Contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    overflow: hidden; /* Evita que se muestren las tarjetas fuera del área visible */
+    padding: 1rem 50px; /* Espacio para los botones */
+    width: 100%;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 calc(33.33% - 1rem); /* Tres tarjetas visibles */
+    max-width: calc(33.33% - 1rem);
+    height: 300px;
+    scroll-snap-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .btn-nav.left {
+    left: 10px;
+  }
+
+  .btn-nav.right {
+    right: 10px;
+  }
+
+  .btn-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .titulo-main{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /**
+  * Inicio Css Informacion Personal
+  */
+  
+  #informacion-personal .contenedor-principal-info-personal{
+    border: 1px solid black;
+  }
+
+  .contenedor-principal-info-personal > div > div {
+    border: 1px solid black;
+    height: 300;
+  }
+
+  .descripcion-personal{
+    background-color: #000000;
+    color: #ddd;
+    text-align: left;
+  }
+
+  .info {
+    flex: 2;
+    padding: 20px;
+}
+
+.info h1 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.details p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.details strong {
+    color: #ffcc00;
+}
+
+  /**
+  * Fin Css Informacion de Personal
+  */
