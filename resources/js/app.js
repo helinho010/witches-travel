@@ -1,6 +1,19 @@
 import './bootstrap.js';
 import '../css/app.css';
 
+/**
+ * Java script para preloader img del sitio web
+ */
+window.addEventListener('load', function() {
+    // Oculta el preloader
+    document.getElementById('preloader').style.display = 'none';
+    // Muestra el contenido principal
+    document.getElementById('content').style.display = 'block';
+});
+/**
+ * Fin Preloader javascript preloader
+ */
+
 let currentSlide = 1;
 
 /*
@@ -67,3 +80,68 @@ let currentSlide = 1;
     });
 
     mostrarImagen(currentSlide);
+
+
+    /*
+    * Estadisticas
+     */
+
+    function startCounters() {
+      const counters = document.querySelectorAll('.counter');
+      
+      counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target'); 
+          let count = 0;
+          const increment = target / 50; // Velocidad del contador
+
+          const updateCounter = () => {
+              if (count < target) {
+                  count += increment;
+                  counter.innerText = Math.ceil(count);
+                  setTimeout(updateCounter, 50);
+              } else {
+                  counter.innerText = target; 
+              }
+          };
+
+          updateCounter();
+      });
+  }
+
+  // Detectar cuando los contadores están en la vista
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              startCounters();
+              observer.disconnect(); // Se ejecuta una sola vez
+          }
+      });
+  });
+
+  observer.observe(document.querySelector('.counter'));
+
+    /**
+     * Fin Estadistica
+     */
+
+
+    /**
+     * Productos
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        const items = document.querySelectorAll('.action-item');
+        const contentDisplay = document.getElementById('content-display');
+
+        items.forEach(item => {
+            item.addEventListener('click', function() {
+                const content = this.getAttribute('data-content');
+                contentDisplay.innerHTML = `
+                    <h4>${this.textContent}</h4>
+                    <p>${content}</p>
+                `;
+            });
+        });
+    });
+    /**
+     * Fin Productos
+     */

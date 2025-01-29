@@ -10,7 +10,7 @@
         <!-- Menú en la esquina superior izquierda -->
         <nav class="menu roboto-condensed-menu">
             <a href="#home">INICIO</a>
-            <a href="#page">PRODUCTOS</a>
+            <a href="#productos">PRODUCTOS</a>
             <a href="#Contacto">CONTACTOS</a>
         </nav>
 
@@ -45,6 +45,84 @@
 @endsection
 
 @section('main')
+
+<!-- Productos -->
+<div class="container" id="productos">
+    <div class="row text-center gloria-hallelujah-regular titulo-main">
+        <div class="col-md-12">
+            Produtos y Servicios
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Categorías -->
+            <div class="col-md-4 category-container">
+                <div class="accordion accordion-flush" id="categoryAccordion">
+                    <!-- Dairy, Bread & Eggs -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category1" aria-expanded="true" aria-controls="category1">
+                                🥛 Dairy, Bread & Eggs
+                            </button>
+                        </h2>
+                        <div id="category1" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item action-item" data-content="Milk details">Milk</li>
+                                    <li class="list-group-item action-item" data-content="Cheese types">Cheese</li>
+                                    <li class="list-group-item action-item" data-content="Bread varieties">Bread</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Snacks & Munchies -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category2" aria-expanded="false" aria-controls="category2">
+                                🍿 Snacks & Munchies
+                            </button>
+                        </h2>
+                        <div id="category2" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item action-item" data-content="Chips varieties">Chips</li>
+                                    <li class="list-group-item action-item" data-content="Cookie types">Cookies</li>
+                                    <li class="list-group-item action-item" data-content="Nut varieties">Nuts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fruits & Vegetables -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category3" aria-expanded="false" aria-controls="category3">
+                                🍎 Fruits & Vegetables
+                            </button>
+                        </h2>
+                        <div id="category3" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item action-item" data-content="Fresh fruits">Fruits</li>
+                                    <li class="list-group-item action-item" data-content="Green vegetables">Vegetables</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Contenido al lado derecho -->
+            <div class="col-md-8">
+                <div class="content-box" id="content-display">
+                    <h4>Select a category</h4>
+                    <p>Click on a category to see details here.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Fin productos-->
 
 <!-- Inicio Personal de la Empresa-->
 <div class="container-fluid mt-5" id="informacion-personal">
@@ -192,6 +270,30 @@
         </div>
       </div>
 </div>
+
+<!-- Estadistica -->
+<div class="container text-center py-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="custom-number-color counter" data-target="70">0</h2>
+            <h5 class="custom-text-color">Coded Elements</h5>
+            <p class="custom-subtext">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+        </div>
+        <div class="col-md-4 position-relative">
+            <div class="divider position-absolute top-0 start-0"></div>
+            <h2 class="custom-number-color counter" data-target="15">0</h2>
+            <h5 class="custom-text-color">Design Blocks</h5>
+            <p class="custom-subtext">Mix the sections, change the colors and unleash your creativity</p>
+        </div>
+        <div class="col-md-4 position-relative">
+            <div class="divider position-absolute top-0 start-0"></div>
+            <h2 class="custom-number-color counter" data-target="4">0</h2>
+            <h5 class="custom-text-color">Pages</h5>
+            <p class="custom-subtext">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+        </div>
+    </div>
+</div>
+<!-- Fin Estadistica-->
 
 {{-- Icono de Whatsapp --}}
 <a href="https://wa.me/591123456789" target="_blank" class="whatsapp-float" title="Chat en WhatsApp">

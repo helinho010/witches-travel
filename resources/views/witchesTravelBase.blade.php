@@ -30,6 +30,11 @@
         @endif
     </head>
 <body>
+
+    <div id="preloader">
+        <img src="loading-image.jpg" alt="Cargando..." />
+    </div>
+    
     @section('header')
     @show
     
