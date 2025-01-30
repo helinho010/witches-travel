@@ -65,7 +65,7 @@ header, main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #000000; /* Fondo blanco */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +73,8 @@ header, main {
 }
 
 #preloader img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 /* Oculta el contenido principal hasta que se cargue la página */

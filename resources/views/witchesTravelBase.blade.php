@@ -32,7 +32,7 @@
 <body>
 
     <div id="preloader">
-        <img src="loading-image.jpg" alt="Cargando..." />
+        <img src="{{asset('/img/witchesTravelLogoSinFondo.png')}}" alt="Cargando..." /> 
     </div>
     
     @section('header')

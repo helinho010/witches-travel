@@ -5,10 +5,12 @@ import '../css/app.css';
  * Java script para preloader img del sitio web
  */
 window.addEventListener('load', function() {
-    // Oculta el preloader
-    document.getElementById('preloader').style.display = 'none';
-    // Muestra el contenido principal
-    document.getElementById('content').style.display = 'block';
+    setTimeout(() => {
+        // Oculta el preloader
+        document.getElementById('preloader').style.display = 'none';
+        // Muestra el contenido principal
+        document.getElementById('content').style.display = 'block';
+    }, 5000);
 });
 /**
  * Fin Preloader javascript preloader
