@@ -68,7 +68,10 @@
                         <div id="category1" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item action-item" data-content="<x-categoria.descripcion-sub-categoria/>">Milk</li>
+                                    <li class="list-group-item action-item" 
+                                        data-content="<x-categoria.descripcion-sub-categoria nombre-producto='hola'/>">
+                                        Milk
+                                    </li>
                                     <li class="list-group-item action-item" data-content="Cheese types">Cheese</li>
                                     <li class="list-group-item action-item" data-content="Bread varieties">Bread</li>
                                 </ul>
@@ -87,7 +90,10 @@
                                 <ul class="list-group">
                                     <li class="list-group-item action-item" data-content="Chips varieties">Chips</li>
                                     <li class="list-group-item action-item" data-content="Cookie types">Cookies</li>
-                                    <li class="list-group-item action-item" data-content="Nut varieties">Nuts</li>
+                                    <li class="list-group-item action-item" 
+                                        data-content="<x-categoria.descripcion-sub-categoria nombre-producto='Auriculares inalámbricos Beats Studio Buds+ Plus con cancelación de ruido negros/dorados'/>">
+                                        Nuts
+                                    </li>
                                 </ul>
                             </div>
                         </div>

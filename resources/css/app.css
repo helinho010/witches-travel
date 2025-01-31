@@ -544,3 +544,52 @@ footer div > div > div > div {
 /**
 * Fin Productos
 */
+
+
+/**
+* Presentacion de cada producto o servicio
+*/
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    color: #213a8f;
+    font-weight: bold;
+}
+.price {
+    color: #f7a823;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.shipping {
+    color: #646363;
+}
+.badge {
+    background-color: #0bbbef;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #213a8f;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0bbbef;
+}
+.favorite {
+    color: #646363;
+}
+.sponsored {
+    color: #bdd4e1;
+    font-size: 0.9rem;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/**
+* Fin Presentacion de cada producto o servicio
+*/

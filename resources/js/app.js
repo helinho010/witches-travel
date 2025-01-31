@@ -139,7 +139,7 @@ let currentSlide = 1;
                 const content = this.getAttribute('data-content');
                 contentDisplay.innerHTML = `
                     <h4>${this.textContent}</h4>
-                    <p>${content}</p>
+                    ${content}
                 `;
             });
         });
