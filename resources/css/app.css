@@ -116,16 +116,22 @@ header, main {
 
 /* Define cada imagen de fondo */
 .imagen1 {
-    background-image: url('../img/laragartija.webp');
+    background-image: url('../img/baner/Baner1.jpg');
 }
 
 .imagen2 {
-    background-image: url('../img/mono.webp');
+    background-image: url('../img/baner/Baner2.jpg');
+}
+.imagen3 {
+    background-image: url('../img/baner/Baner6.jpg');
+}
+.imagen4 {
+    background-image: url('../img/baner/Baner8.jpg');
 }
 
 /* Efecto de alejamiento (zoom-out) que se ejecuta solo una vez */
 .alejamiento {
-    animation: alejamiento 7s ease forwards; /* Animación de alejamiento hacia adelante */
+    animation: alejamiento 7s ease forwards !important; /* Animación de alejamiento hacia adelante */
 }
 
 @keyframes alejamiento {

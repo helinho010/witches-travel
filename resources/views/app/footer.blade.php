@@ -6,6 +6,10 @@
         <div class="imagen imagen1"></div>
         <!-- Imagen de fondo 2 -->
         <div class="imagen imagen2"></div>
+        <!-- Imagen de fondo 3 -->
+        <div class="imagen imagen3"></div>
+        <!-- Imagen de fondo 4 -->
+        <div class="imagen imagen4"></div>
         
         <!-- Menú en la esquina superior izquierda -->
         <nav class="menu roboto-condensed-menu">
@@ -33,6 +37,8 @@
         <!-- Indicador de posición en la esquina inferior izquierda -->
         <div class="indicador">
             <span class="punto activo"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
             <span class="punto"></span>
         </div>
         
@@ -62,14 +68,19 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category1" aria-expanded="true" aria-controls="category1">
-                                🥛 Dairy, Bread & Eggs
+                                🥛 Trekkng
                             </button>
                         </h2>
                         <div id="category1" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion">
                             <div class="accordion-body">
                                 <ul class="list-group">
                                     <li class="list-group-item action-item" 
-                                        data-content="<x-categoria.descripcion-sub-categoria nombre-producto='hola'/>">
+                                        data-content="
+                                        <x-categoria.descripcion-sub-categoria 
+                                            nombre-producto='Treking con las personas que conoces'
+                                            imagen-producto='mono.webp'
+                                            titulo-producto='Imagen'
+                                        />">
                                         Milk
                                     </li>
                                     <li class="list-group-item action-item" data-content="Cheese types">Cheese</li>
