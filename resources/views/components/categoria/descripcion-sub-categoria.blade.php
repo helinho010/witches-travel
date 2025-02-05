@@ -2,7 +2,7 @@
     <div class='container-fluid'>
         <div class='row'>
             <div class='col-md-4'>
-                <img src='https://localhost/imagen.jpg' alt='{{ $tituloProducto }}'>
+                <img src='{{ asset("/img/$imagenProducto") }}' class='img-fluid' alt='{{ $tituloProducto }}'>
             </div>
             <div class='col-md-8'>
                 <span class='badge mb-3'>NUEVO PRECIO BAJO</span>

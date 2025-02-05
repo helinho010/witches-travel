@@ -78,8 +78,8 @@
                                         data-content="
                                         <x-categoria.descripcion-sub-categoria 
                                             nombre-producto='Treking con las personas que conoces'
+                                            titulo-producto='Prueba'
                                             imagen-producto='mono.webp'
-                                            titulo-producto='Imagen'
                                         />">
                                         Milk
                                     </li>
@@ -102,8 +102,12 @@
                                     <li class="list-group-item action-item" data-content="Chips varieties">Chips</li>
                                     <li class="list-group-item action-item" data-content="Cookie types">Cookies</li>
                                     <li class="list-group-item action-item" 
-                                        data-content="<x-categoria.descripcion-sub-categoria nombre-producto='Auriculares inalámbricos Beats Studio Buds+ Plus con cancelación de ruido negros/dorados'/>">
-                                        Nuts
+                                        data-content="<x-categoria.descripcion-sub-categoria 
+                                                        nombre-producto='Auriculares inalámbricos Beats Studio Buds+ Plus con cancelación de ruido negros/dorados'
+                                                        titulo-producto='Bueno otra prueba'
+                                                        imagen-producto='laragartija.webp'
+                                                      />">
+                                        Caminata A Oruro
                                     </li>
                                 </ul>
                             </div>
