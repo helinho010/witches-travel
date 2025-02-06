@@ -214,7 +214,7 @@ let currentSlide = 1;
             item.addEventListener('click', function() {
                 const content = this.getAttribute('data-content');
                 contentDisplay.innerHTML = `
-                    <h4>${this.textContent}</h4>
+                    <h3 class="text-center" style="font-weight: bold;">${this.textContent}</h3>
                     ${content}
                 `;
             });

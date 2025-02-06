@@ -1,19 +1,20 @@
 <div>
     <div class='container-fluid'>
-        <div class='row'>
-            <div class='col-md-4'>
-                <img src='{{ asset("/img/$imagenProducto") }}' class='img-fluid' alt='{{ $tituloProducto }}'>
+        <div class='row text-center'>
+            <span class='badge mb-3'>DESCUENTO DEL 25%</span>
+            <div class='col-md-6'>
+                <img src='{{ asset("/img/$imagenProducto") }}' style='width: 500px;' alt='{{ $tituloProducto }}'>
             </div>
-            <div class='col-md-8'>
-                <span class='badge mb-3'>NUEVO PRECIO BAJO</span>
+        </div>
+        <div class='row'>
+            <div class='col-md-10'>
                 <h2 class='card-title'> {{ $nombreProducto }} </h2>
-                <p class='card-text'>Totalmente nuevo</p>
-                <p class='price'>Bs. 483.60</p>
-                <p class='shipping'>+Bs. 233.54 por el envío de Estados Unidos</p>
-                <p class='favorite'>65 lo marcaron como favorito</p>
-                <p class='sponsored'>Patrocinado</p>
+                <p class='card-text'> {{ $descripcionProducto }} </p>
+                <p class='price'> {{ $precioProducto }} </p>
+                <p class='favorite'> + {{ $comentariosPositivosProducto }} lo marcaron como favorito</p>
+                {{-- <p class='sponsored'>Patrocinado</p>
                 <p class='seller'>stecon397009 (36) 94,6%</p>
-                <button class='btn btn-primary'>Hacer oferta</button>
+                <button class='btn btn-primary'>Hacer oferta</button> --}}
             </div>
         </div>
     </div>    

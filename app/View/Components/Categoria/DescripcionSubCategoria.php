@@ -15,7 +15,10 @@ class DescripcionSubCategoria extends Component
     public function __construct(
         public string $nombreProducto,
         public string $imagenProducto,
-        public string $tituloProducto
+        public string $tituloProducto,
+        public string $descripcionProducto,
+        public string $precioProducto,
+        public string $comentariosPositivosProducto,
     ){
         //
     }

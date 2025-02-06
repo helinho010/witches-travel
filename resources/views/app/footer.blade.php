@@ -68,7 +68,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category1" aria-expanded="true" aria-controls="category1">
-                                🥛 Trekkng
+                                🥾 Trekkng
                             </button>
                         </h2>
                         <div id="category1" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion">
@@ -77,14 +77,28 @@
                                     <li class="list-group-item action-item" 
                                         data-content="
                                         <x-categoria.descripcion-sub-categoria 
-                                            nombre-producto='Treking con las personas que conoces'
+                                            nombre-producto='Explora el Camino Prehispánico: Una Caminata a Través de la Historia'
                                             titulo-producto='Prueba'
                                             imagen-producto='mono.webp'
+                                            descripcion-producto='Disfruta de una increíble caminata por el Camino Prehispánico, donde podrás conectar con la naturaleza, descubrir paisajes espectaculares y explorar senderos llenos de historia y cultura ancestral. ¡Una aventura única para los amantes del trekking y la historia!'
+                                            precio-producto='Bs. 210 o Us. 70'
+                                            comentarios-positivos-producto='75'
                                         />">
-                                        Milk
+                                        Camino Prehispanico
                                     </li>
-                                    <li class="list-group-item action-item" data-content="Cheese types">Cheese</li>
-                                    <li class="list-group-item action-item" data-content="Bread varieties">Bread</li>
+                                    <li class="list-group-item action-item" 
+                                        data-content="
+                                        <x-categoria.descripcion-sub-categoria 
+                                            nombre-producto='Caminata Sendero del Choro'
+                                            titulo-producto='Choro'
+                                            imagen-producto='choro.jpeg'
+                                            descripcion-producto='El Camino del Choro en Bolivia es una impresionante ruta de trekking que conecta la cordillera de los Andes con la selva yungueña. A lo largo de sus aproximadamente 60 km, los viajeros descienden desde los 4,900 metros de altura en el paso La Cumbre hasta los 1,300 metros en los valles subtropicales, atravesando paisajes espectaculares, antiguos caminos incas y una biodiversidad increíble. Ideal para aventureros que buscan una experiencia única entre historia, naturaleza y cultura.'
+                                            precio-producto='Bs. 700 o Us. 100'
+                                            comentarios-positivos-producto='203'
+                                        />">
+                                        El Choro (Camino del inca)
+                                    </li>
+                                    <li class="list-group-item action-item" data-content="Tiwanaku">Tiwanaku</li>
                                 </ul>
                             </div>
                         </div>
@@ -93,22 +107,15 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category2" aria-expanded="false" aria-controls="category2">
-                                🍿 Snacks & Munchies
+                                🧗🏻‍♂️ Ascensos y Descensos
                             </button>
                         </h2>
                         <div id="category2" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item action-item" data-content="Chips varieties">Chips</li>
-                                    <li class="list-group-item action-item" data-content="Cookie types">Cookies</li>
-                                    <li class="list-group-item action-item" 
-                                        data-content="<x-categoria.descripcion-sub-categoria 
-                                                        nombre-producto='Auriculares inalámbricos Beats Studio Buds+ Plus con cancelación de ruido negros/dorados'
-                                                        titulo-producto='Bueno otra prueba'
-                                                        imagen-producto='laragartija.webp'
-                                                      />">
-                                        Caminata A Oruro
-                                    </li>
+                                    <li class="list-group-item action-item" data-content="Chips varieties">Illimani</li>
+                                    <li class="list-group-item action-item" data-content="Cookie types">Sajama</li>
+                                    <li class="list-group-item action-item" data-content="Huayna Potosi">Huayna Potosi</li>
                                 </ul>
                             </div>
                         </div>
@@ -117,14 +124,14 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category3" aria-expanded="false" aria-controls="category3">
-                                🍎 Fruits & Vegetables
+                                🚣‍♂️ Adrenalina 
                             </button>
                         </h2>
                         <div id="category3" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item action-item" data-content="Fresh fruits">Fruits</li>
-                                    <li class="list-group-item action-item" data-content="Green vegetables">Vegetables</li>
+                                    <li class="list-group-item action-item" data-content="Rafting">Rafting</li>
+                                    <li class="list-group-item action-item" data-content="trekking">trekking</li>
                                 </ul>
                             </div>
                         </div>
@@ -190,7 +197,7 @@
                     </div>                    
                 </div>
                 <div class="col-7">
-                    <img style="height: 300px" src="{{asset('img/personal/2.webp')}}" alt="">
+                    <img style="width: 100% ;height: 300px" src="{{asset('img/personal/2.webp')}}" alt="">
                 </div>
             </div>
             <div class="row">
