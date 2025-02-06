@@ -56,7 +56,7 @@
 <div class="container" id="productos">
     <div class="row text-center gloria-hallelujah-regular titulo-main">
         <div class="col-md-12">
-            Produtos y Servicios
+            Productos y Servicios
         </div>
     </div>
     <div class="container mt-5">
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-5 descripcion-personal">
                     <div class="info">
-                        <h1>María López</h1>
+                        <h1>Elver Garalga</h1>
                         <h2>Guía Turística</h2>
                         <p>
                             Soy una guía turística apasionada con más de 10 años de experiencia 
@@ -172,9 +172,9 @@
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
-                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
-                            <p><strong>Contacto:</strong> +34 123 456 789</p>
-                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                            <p><strong>Idiomas:</strong> Español, Inglés, Francés, Portugues</p>
+                            <p><strong>Contacto:</strong> +591 77777777</p>
+                            <p><strong>Email:</strong> egalarga@witches-travel.com</p>
                         </div>
                     </div>     
                 </div>
@@ -182,7 +182,7 @@
             <div class="row">
                 <div class="col-5 descripcion-personal">
                     <div class="info">
-                        <h1>María López</h1>
+                        <h1>Rosa Melano</h1>
                         <h2>Guía Turística</h2>
                         <p>
                             Soy una guía turística apasionada con más de 10 años de experiencia 
@@ -190,9 +190,9 @@
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
-                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
-                            <p><strong>Contacto:</strong> +34 123 456 789</p>
-                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                            <p><strong>Idiomas:</strong> Español, Inglés</p>
+                            <p><strong>Contacto:</strong> +591 787956452</p>
+                            <p><strong>Email:</strong> rmelano@witches-travel.com</p>
                         </div>
                     </div>                    
                 </div>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="col-5 descripcion-personal">
                     <div class="info">
-                        <h1>María López</h1>
+                        <h1>Yosi Lodoi</h1>
                         <h2>Guía Turística</h2>
                         <p>
                             Soy una guía turística apasionada con más de 10 años de experiencia 
@@ -214,9 +214,9 @@
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
-                            <p><strong>Idiomas:</strong> Español, Inglés, Francés</p>
-                            <p><strong>Contacto:</strong> +34 123 456 789</p>
-                            <p><strong>Email:</strong> maria.lopez@turismo.com</p>
+                            <p><strong>Idiomas:</strong> Español, Arabe, Arameo, Latin</p>
+                            <p><strong>Contacto:</strong> +591 69892636</p>
+                            <p><strong>Email:</strong> yolodi@witches-travel.com</p>
                         </div>
                     </div> 
                 </div>
@@ -225,6 +225,25 @@
     </div>
 </div>
 <!-- Fin Personal de la Empresa-->
+
+<!--Inicio Colash imagenes-->
+<div class="container" id="colash">
+    <div class="collage">
+        <img src="{{asset('img/baner/Baner1.jpg')}}" class="img img1" alt="">
+        <img src="{{asset('img/baner/Baner2.jpg')}}" class="img img2" alt="">
+        <img src="{{asset('img/baner/Baner3.jpg')}}" class="img img3" alt="">
+        <img src="{{asset('img/baner/Baner4.jpg')}}" class="img img4" alt="">
+        <img src="{{asset('img/baner/Baner5.jpg')}}" class="img img5" alt="">
+        <img src="{{asset('img/baner/Baner6.jpg')}}" class="img img6" alt="">
+        <img src="{{asset('img/baner/Baner8.jpg')}}" class="img img7" alt="">
+        <div class="text-overlay">
+            <h2>Recuerdos del</h2>
+            <h1>VERANO</h1>
+            <h3>2024</h3>
+        </div>
+    </div>
+</div>
+<!--Fin Colash imagenes-->
 
 <div class="container mt-5">
     <div class="row">
@@ -245,31 +264,6 @@
             <p>Incluye: Actividades para todas las edades y descuentos grupales.</p>
         </div>
     </div>    
-
-    <!-- Three Columns Example -->
-    <div class="row mt-5">
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 1">
-            </div>
-            <h4 class="mt-2">Título 1</h4>
-            <p>Descripción breve sobre el contenido 1.</p>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 2">
-            </div>
-            <h4 class="mt-2">Título 2</h4>
-            <p>Descripción breve sobre el contenido 2.</p>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid lifted-image" alt="Imagen 3">
-            </div>
-            <h4 class="mt-2">Título 3</h4>
-            <p>Descripción breve sobre el contenido 3.</p>
-        </div>
-    </div>
 </div>
 
 <div class="container mt-5">

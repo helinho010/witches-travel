@@ -223,3 +223,19 @@ let currentSlide = 1;
     /**
      * Fin Productos
      */
+
+
+    /**
+     * Inicio colash images
+     */
+    window.addEventListener('scroll', () => {
+        const collageItems = document.querySelectorAll('.collage-item');
+        collageItems.forEach((item, index) => {
+            const speed = (index + 1) * 0.1;
+            const offset = window.pageYOffset;
+            item.style.transform = `translateY(${offset * speed}px)`;
+        });
+    });
+    /**
+     * Fin colash imagenes
+     */
