@@ -55,7 +55,7 @@
 <!-- Productos -->
 <div class="container" id="productos">
     <div class="row text-center gloria-hallelujah-regular titulo-main">
-        <div class="col-md-12">
+        <div class="col-md-12 h3">
             Productos y Servicios
         </div>
     </div>
@@ -154,7 +154,7 @@
 
 <!-- Inicio Personal de la Empresa-->
 <div class="container-fluid mt-5" id="informacion-personal">
-    <div class="text-center gloria-hallelujah-regular titulo-main">Personal Capacitado</div>
+    <div class="text-center gloria-hallelujah-regular titulo-main h3">Personal Capacitado</div>
     <br>
     <div class="row contenedor-principal-info-personal">
         <div class="container-fluid">
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-5 descripcion-personal">
                     <div class="info">
-                        <h1>Elver Garalga</h1>
+                        <h1>Elver Galarga</h1>
                         <h2>Guía Turística</h2>
                         <p>
                             Soy una guía turística apasionada con más de 10 años de experiencia 
@@ -266,7 +266,7 @@
     </div>    
 </div>
 
-<div class="container mt-5">
+{{-- <div class="container mt-5">
     <div class="text-center gloria-hallelujah-regular" id="titulo-carousel">Comentarios de las Personas</div>
     <div class="carousel-container">
         <button class="btn-nav left">&larr;</button>
@@ -291,27 +291,62 @@
           </div>
         </div>
       </div>
+</div> --}}
+
+<div class="container mt-5">
+    <div class="text-center gloria-hallelujah-regular h3" id="titulo-carousel">Comentarios de las Personas</div>
+    <div class="carousel-container">
+        <button class="btn-nav left">&larr;</button>
+        <button class="btn-nav right">&rarr;</button>
+        
+        <div class="carousel">
+          <div class="card">
+            <div class="card-content">
+                <div class="profile-img">
+                    <img src="{{ asset('/img/comentarios/1.jpg') }}" alt="Perfil">
+                </div>
+                <h5 class="profile-name">Juana Melame</h5>
+                <p>"El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"</p>
+            </div>
+          </div>
+          <x-comentario.card class="card"
+                imagen-comentario-card="1.png"
+                nombre-personaComentario-card="Soyla Vaca"
+                texto-comentario-card="Explorar nuevos senderos siempre me deja recuerdos inolvidables. ¡No hay mejor sensación que llegar a la cima!"
+          />
+          <x-comentario.card class="card"
+                imagen-comentario-card="2.jpeg"
+                nombre-personaComentario-card="Juana Melame"
+                texto-comentario-card="El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"
+          />
+          <x-comentario.card class="card"
+                imagen-comentario-card="3.jpeg"
+                nombre-personaComentario-card="Arnaldo Arispe"
+                texto-comentario-card="El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"
+            />  
+        </div>
+    </div>
 </div>
 
 <!-- Estadistica -->
 <div class="container text-center py-5">
     <div class="row">
         <div class="col-md-4">
-            <h2 class="custom-number-color counter" data-target="70">0</h2>
-            <h5 class="custom-text-color">Coded Elements</h5>
-            <p class="custom-subtext">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+            <h2 class="custom-number-color"><span>+</span><span class="counter" data-target="70" >0</span></h2>
+            <h5 class="custom-text-color">Paquetes turísticos</h5>
+            <p class="custom-subtext">Opciones personalizadas para todos los gustos y presupuestos.</p>
         </div>
         <div class="col-md-4 position-relative">
             <div class="divider position-absolute top-0 start-0"></div>
-            <h2 class="custom-number-color counter" data-target="15">0</h2>
-            <h5 class="custom-text-color">Design Blocks</h5>
-            <p class="custom-subtext">Mix the sections, change the colors and unleash your creativity</p>
+            <h2 class="custom-number-color"><span>+</span><span class="counter" data-target="1000">0</span></h2>
+            <h5 class="custom-text-color">Clientes satisfechos</h5>
+            <p class="custom-subtext">Experiencias inolvidables con opiniones positivas.</p>
         </div>
         <div class="col-md-4 position-relative">
             <div class="divider position-absolute top-0 start-0"></div>
-            <h2 class="custom-number-color counter" data-target="4">0</h2>
-            <h5 class="custom-text-color">Pages</h5>
-            <p class="custom-subtext">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+            <h2 class="custom-number-color"><span>+</span><span class="counter" data-target="30">0</span></h2>
+            <h5 class="custom-text-color">Tours guiados exclusivos</h5>
+            <p class="custom-subtext">Rutas especiales con guías expertos.</p>
         </div>
     </div>
 </div>

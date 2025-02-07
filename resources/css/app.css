@@ -389,71 +389,106 @@ footer div > div > div > div {
 /*
 * Carrusel de cards 
 */
-/* Contenedor del carrusel */
 .carousel-container {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
+    padding: 20px 0;
+}
 
-  .carousel {
+.carousel {
     display: flex;
     gap: 1rem;
     scroll-snap-type: x mandatory;
-    overflow: hidden; /* Evita que se muestren las tarjetas fuera del área visible */
-    padding: 1rem 50px; /* Espacio para los botones */
+    overflow-x: auto;
+    padding: 1rem 50px;
     width: 100%;
-  }
+}
 
-  .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
     display: none;
-  }
+}
 
-  .card {
-    flex: 0 0 calc(33.33% - 1rem); /* Tres tarjetas visibles */
-    max-width: calc(33.33% - 1rem);
-    height: 300px;
+.card {
+    flex: 0 0 300px;
+    height: 350px;
     scroll-snap-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    background: white;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
-  }
+    padding: 20px;
+}
 
-  .btn-nav {
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #00aaff;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    z-index: 0;
+}
+
+.profile-img {
+    position: relative;
+    z-index: 2;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    margin-top: 20px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    margin: 15px 0 5px;
+    z-index: 3;
+    position: relative;
+}
+
+p {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    z-index: 3;
+    position: relative;
+}
+
+.btn-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 15px;
     cursor: pointer;
     z-index: 10;
-  }
+    border-radius: 50%;
+}
 
-  .btn-nav.left {
+.btn-nav.left {
     left: 10px;
-  }
+}
 
-  .btn-nav.right {
+.btn-nav.right {
     right: 10px;
-  }
-
-  .btn-nav:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .titulo-main{
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+}
 
   /**
   * Inicio Css Informacion Personal

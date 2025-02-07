@@ -22,19 +22,33 @@ let currentSlide = 1;
 * Carrusel
 */
   
-  const leftButton = document.querySelector('.btn-nav.left');
-  const rightButton = document.querySelector('.btn-nav.right');
-  const carousel = document.querySelector('.carousel');
+//   const leftButton = document.querySelector('.btn-nav.left');
+//   const rightButton = document.querySelector('.btn-nav.right');
+//   const carousel = document.querySelector('.carousel');
 
-  const cardWidth = carousel.querySelector('.card').offsetWidth + 16; // Ancho de tarjeta + gap
+//   const cardWidth = carousel.querySelector('.card').offsetWidth + 16; // Ancho de tarjeta + gap
 
-  leftButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: -cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la izquierda
-  });
+//   leftButton.addEventListener('click', () => {
+//     carousel.scrollBy({ left: -cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la izquierda
+//   });
 
-  rightButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la derecha
-  });
+//   rightButton.addEventListener('click', () => {
+//     carousel.scrollBy({ left: cardWidth * 3, behavior: 'smooth' }); // Mover tres tarjetas hacia la derecha
+//   });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const leftBtn = document.querySelector(".btn-nav.left");
+    const rightBtn = document.querySelector(".btn-nav.right");
+    
+    rightBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: 320, behavior: "smooth" });
+    });
+    
+    leftBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -320, behavior: "smooth" });
+    });
+});
 
 /**
  * Fin Carrusel
