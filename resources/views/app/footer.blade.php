@@ -279,23 +279,23 @@
                 <div class="profile-img">
                     <img src="{{ asset('/img/comentarios/1.jpg') }}" alt="Perfil">
                 </div>
-                <h5 class="profile-name">Ryna Camacho</h5>
+                <h5 class="profile-name">Claudia Velasco</h5>
                 <p>"Explorar nuevos senderos es descubrirse a uno mismo. Cada paso en el trekking es una historia, cada montaña conquistada es un logro. ¡Una experiencia que te llena de vida!"</p>
             </div>
           </div>
           <x-comentario.card class="card"
-                imagen-comentario-card="1.png"
-                nombre-personaComentario-card="Daniela Prado"
+                imagen-comentario-card="2.jpeg"
+                nombre-personaComentario-card="Maria Quintana"
                 texto-comentario-card="Nada se compara con la sensación de libertad que te da el trekking. Respirar aire puro, desconectarse del mundo y conectar con la naturaleza es simplemente mágico."
           />
           <x-comentario.card class="card"
-                imagen-comentario-card="2.jpeg"
+                imagen-comentario-card="3.jpeg"
                 nombre-personaComentario-card="Alberto Quarite"
                 texto-comentario-card="Cada ruta es un nuevo desafío, pero la recompensa siempre vale la pena. Paisajes asombrosos, momentos únicos y recuerdos imborrables. ¡El trekking es pura aventura!"
           />
           <x-comentario.card class="card"
-                imagen-comentario-card="3.jpeg"
-                nombre-personaComentario-card="Arnaldo Arispe"
+                imagen-comentario-card="4.jpeg"
+                nombre-personaComentario-card="Alexandrea Puente"
                 texto-comentario-card="Caminar entre montañas y bosques es la mejor terapia. El trekking no solo fortalece el cuerpo, sino también el espíritu. ¡Una pasión que te transforma!"
             />
         </div>
