@@ -10,7 +10,7 @@
         <div class="imagen imagen3"></div>
         <!-- Imagen de fondo 4 -->
         <div class="imagen imagen4"></div>
-        
+
         <!-- Menú en la esquina superior izquierda -->
         <nav class="menu roboto-condensed-menu">
             <a href="#home">INICIO</a>
@@ -20,10 +20,10 @@
 
         <!-- Logo y nombre de la empresa en la esquina superior derecha -->
         <div class="logo-nombre-empresa">
-            <img class="logo" src="{{ asset('/img/witchesTravelLogoSinFondo.png') }}" alt="Logo de la empresa">
+            <img class="logo img-fluid" src="{{ asset('/img/witchesTravelLogoSinFondo.png') }}" alt="Logo de la empresa">
             <span class="nombre-empresa">WITCHES TRAVEL</span>
         </div>
-        
+
         <!-- Frase superpuesta en el centro izquierdo -->
         <div class="texto">
             <div class="texto1 gloria-hallelujah-regular">
@@ -33,7 +33,7 @@
                 La fauna la borde del colapso
             </div>
         </div>
-        
+
         <!-- Indicador de posición en la esquina inferior izquierda -->
         <div class="indicador">
             <span class="punto activo"></span>
@@ -41,7 +41,7 @@
             <span class="punto"></span>
             <span class="punto"></span>
         </div>
-        
+
         <!-- Flechas de navegación en la esquina inferior derecha -->
         <div class="controles">
             <button class="flecha-izquierda">&#10094;</button>
@@ -53,7 +53,7 @@
 @section('main')
 
 <!-- Productos -->
-<div class="container" id="productos">
+{{-- <div class="container my-5" id="productos">
     <div class="row text-center gloria-hallelujah-regular titulo-main">
         <div class="col-md-12 h3">
             Productos y Servicios
@@ -74,9 +74,9 @@
                         <div id="category1" class="accordion-collapse collapse show" data-bs-parent="#categoryAccordion">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item action-item" 
+                                    <li class="list-group-item action-item"
                                         data-content="
-                                        <x-categoria.descripcion-sub-categoria 
+                                        <x-categoria.descripcion-sub-categoria
                                             nombre-producto='Explora el Camino Prehispánico: Una Caminata a Través de la Historia'
                                             titulo-producto='Prueba'
                                             imagen-producto='mono.webp'
@@ -86,9 +86,9 @@
                                         />">
                                         Camino Prehispanico
                                     </li>
-                                    <li class="list-group-item action-item" 
+                                    <li class="list-group-item action-item"
                                         data-content="
-                                        <x-categoria.descripcion-sub-categoria 
+                                        <x-categoria.descripcion-sub-categoria
                                             nombre-producto='Caminata Sendero del Choro'
                                             titulo-producto='Choro'
                                             imagen-producto='choro.jpeg'
@@ -124,7 +124,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category3" aria-expanded="false" aria-controls="category3">
-                                🚣‍♂️ Adrenalina 
+                                🚣‍♂️ Adrenalina
                             </button>
                         </h2>
                         <div id="category3" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Contenido al lado derecho -->
             <div class="col-md-8">
                 <div class="content-box" id="content-display">
@@ -147,28 +147,28 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
-</div>
+</div> --}}
 <!-- Fin productos-->
 
 <!-- Inicio Personal de la Empresa-->
-<div class="container-fluid mt-5" id="informacion-personal">
+{{-- <div class="container-fluid mt-5 my-5" id="informacion-personal">
     <div class="text-center gloria-hallelujah-regular titulo-main h3">Personal Capacitado</div>
     <br>
     <div class="row contenedor-principal-info-personal">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-7">
-                    <img style="height: 300px" src="{{asset('img/personal/1.jpeg')}}" alt="">
+            <div class="row d-flex flex-column d-sm-flex flex-sm-column d-md-flex flex-md-row">
+                <div class="col-xs-12 col-sm-12 col-md-7">
+                    <img class="img-fluid" style="height: 300px" src="{{asset('img/personal/1.jpeg')}}" alt="">
                 </div>
-                <div class="col-5 descripcion-personal">
+                <div class="col-xs-12 col-sm-12 col-md-5 descripcion-personal">
                     <div class="info">
                         <h1>Elver Galarga</h1>
                         <h2>Guía Turística</h2>
                         <p>
-                            Soy una guía turística apasionada con más de 10 años de experiencia 
-                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            Soy una guía turística apasionada con más de 10 años de experiencia
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales,
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
@@ -176,17 +176,17 @@
                             <p><strong>Contacto:</strong> +591 77777777</p>
                             <p><strong>Email:</strong> egalarga@witches-travel.com</p>
                         </div>
-                    </div>     
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-5 descripcion-personal">
+            <div class="row d-flex flex-column d-sm-flex flex-sm-column d-md-flex flex-md-row">
+                <div class="col-xs-12 col-sm-12 col-md-5 order-2 descripcion-personal">
                     <div class="info">
                         <h1>Rosa Melano</h1>
                         <h2>Guía Turística</h2>
                         <p>
-                            Soy una guía turística apasionada con más de 10 años de experiencia 
-                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            Soy una guía turística apasionada con más de 10 años de experiencia
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales,
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
@@ -194,23 +194,23 @@
                             <p><strong>Contacto:</strong> +591 787956452</p>
                             <p><strong>Email:</strong> rmelano@witches-travel.com</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-                <div class="col-7">
-                    <img style="width: 100% ;height: 300px" src="{{asset('img/personal/2.webp')}}" alt="">
+                <div class="col-xs-12 col-sm-12 col-md-7 order-1">
+                    <img class="img-fluid" style="width: 100% ;height: 300px" src="{{asset('img/personal/2.webp')}}" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7">
-                    <img style="height: 300px" src="{{asset('img/personal/3.webp')}}" alt="">
+            <div class="row d-flex flex-column d-sm-flex flex-sm-column d-md-flex flex-md-row">
+                <div class="col-xs-12 col-sm-12 col-md-7">
+                    <img class="img-fluid" style="height: 300px" src="{{asset('img/personal/3.webp')}}" alt="">
                 </div>
-                <div class="col-5 descripcion-personal">
+                <div class="col-xs-12 col-sm-12 col-md-5 descripcion-personal">
                     <div class="info">
                         <h1>Yosi Lodoi</h1>
                         <h2>Guía Turística</h2>
                         <p>
-                            Soy una guía turística apasionada con más de 10 años de experiencia 
-                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales, 
+                            Soy una guía turística apasionada con más de 10 años de experiencia
+                            mostrando las maravillas de nuestra ciudad. Experta en tours culturales,
                             gastronómicos y de aventura.
                         </p>
                         <div class="details">
@@ -218,16 +218,16 @@
                             <p><strong>Contacto:</strong> +591 69892636</p>
                             <p><strong>Email:</strong> yolodi@witches-travel.com</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Fin Personal de la Empresa-->
 
 <!--Inicio Colash imagenes-->
-<div class="container" id="colash">
+<div class="container my-2" id="colash">
     <div class="collage">
         <img src="{{asset('img/baner/Baner1.jpg')}}" class="img img1" alt="">
         <img src="{{asset('img/baner/Baner2.jpg')}}" class="img img2" alt="">
@@ -245,7 +245,7 @@
 </div>
 <!--Fin Colash imagenes-->
 
-<div class="container mt-5">
+<div class="container mt-5 my-2">
     <div class="row">
         <!-- One Column & Sidebar -->
         <div class="col-md-6 col-lg-4">
@@ -263,42 +263,16 @@
             <p>Destinos: Resorts familiares, parques temáticos.</p>
             <p>Incluye: Actividades para todas las edades y descuentos grupales.</p>
         </div>
-    </div>    
+    </div>
 </div>
 
-{{-- <div class="container mt-5">
-    <div class="text-center gloria-hallelujah-regular" id="titulo-carousel">Comentarios de las Personas</div>
-    <div class="carousel-container">
-        <button class="btn-nav left">&larr;</button>
-        <button class="btn-nav right">&rarr;</button>
-      
-        <div class="carousel">
-          <div class="card">    
-            <h5>Card 1</h5>
-            <p>Content for card 1.</p>
-          </div>
-          <div class="card">
-            <h5>Card 2</h5>
-            <p>Content for card 2.</p>
-          </div>
-          <div class="card">
-            <h5>Card 3</h5>
-            <p>Content for card 3.</p>
-          </div>
-          <div class="card">
-            <h5>Card 4</h5>
-            <p>Content for card 4.</p>
-          </div>
-        </div>
-      </div>
-</div> --}}
 
 <div class="container mt-5">
     <div class="text-center gloria-hallelujah-regular h3" id="titulo-carousel">Comentarios de las Personas</div>
     <div class="carousel-container">
         <button class="btn-nav left">&larr;</button>
         <button class="btn-nav right">&rarr;</button>
-        
+
         <div class="carousel">
           <div class="card">
             <div class="card-content">
@@ -323,7 +297,7 @@
                 imagen-comentario-card="3.jpeg"
                 nombre-personaComentario-card="Arnaldo Arispe"
                 texto-comentario-card="El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"
-            />  
+            />
         </div>
     </div>
 </div>
@@ -360,13 +334,13 @@
 
 @endsection
 
- 
+
 @section('footer')
     @parent
     <footer id="Contacto">
         <div class="container-fluid">
             <div class="row uno">
-                <div class="col-md-4 text-start">
+                <div class="col-sm-12 col-md-4 text-start">
                     <div class="col">
                         <div class="col titulo">
                             Informacion
@@ -389,7 +363,7 @@
                         </div>
                         <div class="col descripcion">
                             <span>
-                                Contacto 1: <a href="https://wa.me/67115199"> +(591) 67115199 <i class="fa-brands fa-whatsapp"></i></a> 
+                                Contacto 1: <a href="https://wa.me/67115199"> +(591) 67115199 <i class="fa-brands fa-whatsapp"></i></a>
                             </span>
                             <span>
                                 Contacto 2: <a href="https://wa.me/78844780"> +(591) 78844780 <i class="fa-brands fa-whatsapp"></i></a>
@@ -398,13 +372,13 @@
                                 Correo Electronico: <a href="mailto:witchestravel.bo@gmail.com">witchestravel.bo@gmail.com <i class="fa-regular fa-envelope" style="color: red"></i></a>
                             </span>
                         </div>
-                    </div>  
+                    </div>
                 </div>
-                <div class="col-md-4" id="formulario-contacto">
-                    <div class="col titulo">
+                <div class="col-xs-5 col-sm-5 col-md-4" id="formulario-contacto">
+                    <div class="titulo">
                         Formulario de Contacto
                     </div>
-                    <div class="col">
+                    <div class="">
                         <form action="{{ route('formularioContacto') }}" method="post" class="text-start">
                             @csrf
                             @method('post')
@@ -413,14 +387,14 @@
                                 <input type="nombre" name="nombre_contacto" class="form-control" id="exampleFormControlInput1" value="{{ old("nombre_contacto","")}}" placeholder="Ej. Juan Peres">
                                 @error('nombre_contacto')
                                     <span class="mensaje-error-inputs">{{ $message }}</span>
-                                @enderror       
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput2" class="form-label">Numero de Contacto:</label>
                                 <input type="numero" name="numero_contacto" class="form-control" id="exampleFormControlInput2" value="{{ old("numero_contacto","")}}" placeholder="Ej. 77258452">
                                 @error('numero_contacto')
                                     <span class="mensaje-error-inputs">{{ $message }}</span>
-                                @enderror 
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
@@ -432,32 +406,38 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="col titulo">
-                        Redes Sociales
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="titulo">
+                            Redes Sociales
+                        </div>
                     </div>
-                    <div class="col text-start" id="redes-sociales">
-                        <div class="col">
-                            <a href="https://www.facebook.com/462834473580527" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-facebook"></i> Facebook
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.tiktok.com/@witches.travel?_t=8qkJA59waov&_r=1" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-tiktok"></i> Tik Tok
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.instagram.com/witchestravel" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-instagram"></i> Instagram
-                            </a>
+                    <div class="row">
+                        <div class="d-inline-flex flex-row justify-content-center d-sm-inline-flex flex-sm-row justify-content-sm-center d-md-fex flex-md-column" id="redes-sociales">
+                            <div>
+                                <a href="https://www.facebook.com/462834473580527" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-facebook"></i> Facebook
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.tiktok.com/@witches.travel?_t=8qkJA59waov&_r=1" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-tiktok"></i> Tik Tok
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/witchestravel" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-instagram"></i> Instagram
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid">
             <div class="row dos">
                 <div class="col text-center gloria-hallelujah-regular">
-                    <span>
+                    <span class="gold-text">
                         <i class="fa-regular fa-registered"></i> Todos los Derechos Reservados Witches Travel 2024
                     </span>
                     <span>
