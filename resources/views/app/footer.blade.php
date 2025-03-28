@@ -327,7 +327,7 @@
 <!-- Fin Estadistica-->
 
 {{-- Icono de Whatsapp --}}
-<a href="https://wa.me/591123456789" target="_blank" class="whatsapp-float" title="Chat en WhatsApp">
+<a href="https://wa.me/59167115199" target="_blank" class="whatsapp-float" title="Chat en WhatsApp">
     <img src="{{ asset('/img/logoWhatsapp.png') }}" alt="WhatsApp" class="whatsapp-icon"> <!-- Puedes reemplazar con un icono de Font Awesome -->
 </a>
 {{-- Fin Icono de Whatsapp --}}
