@@ -279,24 +279,24 @@
                 <div class="profile-img">
                     <img src="{{ asset('/img/comentarios/1.jpg') }}" alt="Perfil">
                 </div>
-                <h5 class="profile-name">Juana Melame</h5>
-                <p>"El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"</p>
+                <h5 class="profile-name">Ryna Camacho</h5>
+                <p>"Explorar nuevos senderos es descubrirse a uno mismo. Cada paso en el trekking es una historia, cada montaña conquistada es un logro. ¡Una experiencia que te llena de vida!"</p>
             </div>
           </div>
           <x-comentario.card class="card"
                 imagen-comentario-card="1.png"
-                nombre-personaComentario-card="Soyla Vaca"
-                texto-comentario-card="Explorar nuevos senderos siempre me deja recuerdos inolvidables. ¡No hay mejor sensación que llegar a la cima!"
+                nombre-personaComentario-card="Daniela Prado"
+                texto-comentario-card="Nada se compara con la sensación de libertad que te da el trekking. Respirar aire puro, desconectarse del mundo y conectar con la naturaleza es simplemente mágico."
           />
           <x-comentario.card class="card"
                 imagen-comentario-card="2.jpeg"
-                nombre-personaComentario-card="Juana Melame"
-                texto-comentario-card="El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"
+                nombre-personaComentario-card="Alberto Quarite"
+                texto-comentario-card="Cada ruta es un nuevo desafío, pero la recompensa siempre vale la pena. Paisajes asombrosos, momentos únicos y recuerdos imborrables. ¡El trekking es pura aventura!"
           />
           <x-comentario.card class="card"
                 imagen-comentario-card="3.jpeg"
                 nombre-personaComentario-card="Arnaldo Arispe"
-                texto-comentario-card="El trekking es una experiencia increíble que conecta con la naturaleza, desafía tus límites y te regala vistas inolvidables. ¡Una aventura que renueva el alma y llena de energía!"
+                texto-comentario-card="Caminar entre montañas y bosques es la mejor terapia. El trekking no solo fortalece el cuerpo, sino también el espíritu. ¡Una pasión que te transforma!"
             />
         </div>
     </div>
